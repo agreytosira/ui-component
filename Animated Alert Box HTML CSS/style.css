@@ -1,0 +1,141 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.box,
+.tampil-tombol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tampil-tombol {
+    height: 55px;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    line-height: 55px;
+    background: #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.tampil-tombol:hover {
+    background: #0059b8;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.box {
+    padding: 30px;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.97);
+    transition: all 0.3s ease;
+}
+
+#check:checked~.box {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#check:checked~.background {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#check {
+    display: none;
+}
+
+.box .icon {
+    height: 100px;
+    width: 100px;
+    color: #f23b26;
+    border: 3px solid #f23b26;
+    border-radius: 50%;
+    line-height: 97px;
+    font-size: 50px;
+}
+
+.box header {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.box p {
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+.box h1 {
+    margin: 10px 0px;
+}
+
+.box .btns {
+    margin-top: 20px;
+}
+
+.btns label {
+    display: inline-flex;
+    height: 55px;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 55px;
+    outline: none;
+    margin: 0 10px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btns label:first-child {
+    background: #007bff;
+}
+
+.btns label:first-child:hover {
+    background: #0059b8;
+}
+
+.btns label:last-child {
+    background: #f23b26;
+}
+
+.btns label:last-child:hover {
+    background: #d9210d;
+}

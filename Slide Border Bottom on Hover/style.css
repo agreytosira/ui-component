@@ -1,0 +1,33 @@
+li {
+    margin-bottom: 10px;
+}
+
+.slide-border {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.slide-border::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.slide-border:hover::after {
+    margin-bottom: 10px;
+    width: 100%;
+    transition: width .3s;
+}
+
+ul li {
+    display: inline-block;w
+}
+
+ul li a {
+    padding: 20px;
+    font-weight: bold;
+}
