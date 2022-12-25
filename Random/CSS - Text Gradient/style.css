@@ -1,7 +1,0 @@
-.text-gradient {
-    font-size: 100px;
-    background: linear-gradient(to right, #ff71b2, blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-}
